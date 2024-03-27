@@ -10,7 +10,7 @@
             let user = document.getElementById("user").value;
             let pass = document.getElementById("pass").value;
 
-            if (user == "" || pass == "") {
+            if (user == null || pass == null) {
                 alert("preencha os campos corretamente!");
             } else {
                 alert("bem-vindo " + user);
@@ -25,7 +25,7 @@
         <input type="text" id="user">
         <label for="pass">Senha</label>
         <input type="password" id="pass">
-        <input type="submit" value="Enviar" onclick="veirficar()">
+        <input type="submit" value="Enviar" onclick="verificar();">
         <input type="reset" value="limpar" </form>
 </body>
 
